@@ -1,0 +1,63 @@
+THIRD-PARTY SOFTWARE NOTICES
+
+Multi Karaoke Player EX includes third-party software. The notices below
+apply to the listed components; they do not change the license of the
+application itself.
+
+FFmpeg 8.1.2 (vcpkg port revision 3)
+-------------------------------------------
+This software uses libraries from the FFmpeg project under the GNU Lesser
+General Public License version 2.1 or later.
+
+Included DLLs:
+  avcodec-62.dll
+  avformat-62.dll
+  avutil-60.dll
+  swresample-6.dll
+  swscale-9.dll
+
+Project: https://ffmpeg.org/
+License: licenses/FFmpeg-LGPL-v2-1-or-later.txt
+Build information: licenses/FFmpeg-BUILD-INFO.txt
+Corresponding source archive: see the support page for Multi Karaoke Player EX.
+
+{fmt} 12.2.0 (vcpkg port revision 1)
+----------------------------------------
+Copyright (c) 2012 - present, Victor Zverovich and {fmt} contributors.
+Licensed under the MIT License.
+Project: https://github.com/fmtlib/fmt
+License: licenses/fmt-MIT.txt
+
+spdlog 1.17.0 (vcpkg port revision 1)
+------------------------------------------
+Copyright (c) 2016 - present, Gabi Melman and spdlog contributors.
+Licensed under the MIT License.
+Project: https://github.com/gabime/spdlog
+License: licenses/spdlog-MIT.txt
+
+Signalsmith Stretch 1.1.0
+--------------------------
+Copyright (c) 2022 Geraint Luff / Signalsmith Audio Ltd.
+Licensed under the MIT License.
+Project: https://github.com/Signalsmith-Audio/signalsmith-stretch
+License: licenses/Signalsmith-Stretch-MIT.txt
+
+Signalsmith DSP 1.6.2
+----------------------
+Copyright (c) 2021 Geraint Luff / Signalsmith Audio Ltd.
+Licensed under the MIT License.
+Project: https://github.com/Signalsmith-Audio/dsp
+License: licenses/Signalsmith-DSP-MIT.txt
+
+SoundTouchJS 2.1.1
+------------------
+Packages included in the web playback component:
+  @soundtouchjs/audio-worklet
+  @soundtouchjs/core
+  @soundtouchjs/interpolation-strategy-lanczos
+  @soundtouchjs/worklet-base
+
+Licensed under the Mozilla Public License 2.0.
+Project and corresponding source: https://github.com/cutterbl/SoundTouchJS/tree/v2.1.1
+License notice: licenses/SoundTouchJS-MPL-2.0.txt
+

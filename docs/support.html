@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Multi Karaoke Player EX の使い方とサポート情報">
+  <title>Multi Karaoke Player EX サポート</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.75; }
+    body { margin: 0; background: #f6f4fa; color: #241d2e; }
+    main { width: min(880px, calc(100% - 32px)); margin: 40px auto; padding: 32px; box-sizing: border-box; background: #fff; border-radius: 16px; box-shadow: 0 8px 28px rgb(45 28 61 / 10%); }
+    h1 { color: #5d2b86; line-height: 1.35; }
+    h2 { margin-top: 2em; color: #5d2b86; border-bottom: 1px solid #dccde8; }
+    code { overflow-wrap: anywhere; }
+    a { color: #6f369b; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #19151d; color: #eee7f3; }
+      main { background: #241d29; box-shadow: none; }
+      h1, h2, a { color: #d7a9f5; }
+      h2 { border-color: #574362; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Multi Karaoke Player EX サポート</h1>
+  <p>Multi Karaoke Player EXは、PCに保存したカラオケ動画を検索・予約し、曲ごとのキーを変えながら再生できるWindows向けアプリです。</p>
+
+  <h2>動作環境</h2>
+  <ul>
+    <li>Windows 10 バージョン1809以降、またはWindows 11</li>
+    <li>x64のWindows PC</li>
+    <li>Microsoft Edge WebView2 Runtime</li>
+    <li>利用者自身が用意した動画・音声ファイル</li>
+  </ul>
+  <p>Windows 11 x64での利用を推奨します。</p>
+
+  <h2>基本的な使い方</h2>
+  <ol>
+    <li>画面右下の「フォルダ設定」を開きます。</li>
+    <li>カラオケ動画を保存しているフォルダーを追加します。</li>
+    <li>一覧から曲を選び、「予約」または「割り込み予約」を押します。</li>
+    <li>必要に応じて曲順とキーを調整します。</li>
+    <li>「次の曲を再生」を押します。</li>
+  </ol>
+
+  <h2>曲が一覧に表示されない場合</h2>
+  <ul>
+    <li>「フォルダ設定」に正しいフォルダーが登録されているか確認してください。</li>
+    <li>一覧の更新を実行してください。</li>
+    <li>サブフォルダー内も検索しますが、ショートカットやリンク先は対象外です。</li>
+    <li>対応する動画拡張子は MP4、MKV、AVI、MOV、WMV、M4V、WebM、TS、FLV、MPG、MPEGです。</li>
+    <li>カラオケ曲情報ファイルの拡張子は <code>.kvpsong</code> です。</li>
+  </ul>
+
+  <h2>動画が再生できない場合</h2>
+  <p>動画形式が一覧に表示されても、動画内の圧縮方式によっては標準方式で再生できない場合があります。互換モードを利用できる場合は再生前に確認画面が表示されます。WebView2に関するエラーが表示される場合は、Microsoft Edge WebView2 Runtimeが利用できる状態か確認してください。</p>
+
+  <h2>キー変更</h2>
+  <p>キーは－12～＋12半音の範囲で、予約前、予約後、再生中に変更できます。再生速度は変わりませんが、素材や変更幅によって音質が変化する場合があります。</p>
+
+  <h2>カラオケ曲情報ファイル</h2>
+  <p><code>.kvpsong</code> ファイルには、ボーカル入り動画、ボーカルなし動画、別の伴奏音源、既定キーを一曲分としてまとめられます。元の動画や音声は埋め込まれないため、素材を移動または削除すると再生できなくなります。</p>
+
+  <h2>保存される設定と履歴</h2>
+  <p>設定、予約状態、直近20件の再生履歴は <code>%LOCALAPPDATA%\KaraokePlayer-v0.9\</code> に保存されます。初期状態へ戻す場合は、アプリを終了してからこのフォルダーを削除してください。元の動画や音声は削除されません。</p>
+
+  <h2>第三者ソフトウェア</h2>
+  <p>互換モードは、LGPL 2.1以降で提供されるFFmpegのライブラリを使用します。ライセンス本文と作成情報はアプリに同梱しています。</p>
+  <p><a href="FFmpeg-8.1.2-vcpkg-x64-windows-corresponding-source.zip">FFmpeg対応ソースコードをダウンロード</a></p>
+
+  <h2>お問い合わせ</h2>
+  <p>お問い合わせの際は、Windowsとアプリのバージョン、問題が起きるまでの操作、エラー表示、動画の拡張子をお知らせください。</p>
+  <p><a href="https://ya-man-work.com/contact.php">お問い合わせページ</a></p>
+</main>
+</body>
+</html>
